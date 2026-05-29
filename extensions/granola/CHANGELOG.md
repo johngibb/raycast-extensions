@@ -1,6 +1,6 @@
 # Granola Changelog
 
-## [Sortable date prefixes for exports] - {PR_MERGE_DATE}
+## [Sortable date prefixes for exports] - 2026-05-29
 
 - Prefix exported note and transcript filenames with ISO-8601 creation date
 - Sorting files by name now yields chronological order
