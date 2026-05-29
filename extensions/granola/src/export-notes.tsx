@@ -315,7 +315,7 @@ ${enhancedNotes}
             try {
               const markdownContent = formatNoteAsMarkdown(note, batchPanels, batchNotesMarkdown);
               const safeTitle = sanitizeFileName(note.title || untitledNoteTitle);
-              const datePrefix = note.created_at ? '_' + new Date(note.created_at).toISOString().split("T")[0] : "";
+              const datePrefix = note.created_at ? new Date(note.created_at).toISOString().split("T")[0] + "_" : "";
               const fileName = `${datePrefix}${safeTitle}_${note.id.substring(0, 8)}.md`;
               const folderName = folderOrg.documentToFolders[note.id];
 
